@@ -1,3 +1,44 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+{{#paper-content}}
+  {{#paper-card}}
+    {{paper-input label="Name" value=model.name}}
+    {{paper-input label="Weight" value=model.weight}}
+    <p>
+      {{paper-slider flex=true min='0' max='400' value=model.weight}}
+    </p>
+    {{paper-input label="Height" value=model.height}}
+    <p>
+      {{paper-slider flex=true min='10' max='90' value=model.height}}
+    </p>
+    {{paper-input label="Age" value=model.age}}
+    <p>
+      {{paper-slider flex=true min='0' max='120' value=model.age}}
+    </p>
+    {{#paper-radio value="male" selected=model.sex}}Male{{/paper-radio}}
+    {{#paper-radio value="female" selected=model.sex}}Female{{/paper-radio}}
+    <hr>
+    <p>
+      Base Rate:
+      {{bmr}}
+    </p>
+    <p>
+      No Activity:
+      {{noActivity}}
+    </p>
+    <p>
+      Light Activity:
+      {{lightActivity}}
+    </p>
+    <p>
+      Moderate Activity:
+      {{moderateActivity}}
+    </p>
+    <p>
+      Intense Activity:
+      {{intenseActivity}}
+    </p>
+    <p>
+      Ultra Brutal:
+      {{brutalActivity}}
+    </p>
+  {{/paper-card}}
+{{/paper-content}}
