@@ -1,3 +1,13 @@
+# RyanLaBouve/how-much-to-eat-example
+
+This is a sample app for a talk. Check out the slides here:
+https://github.com/ryanlabouve/reacting-to-change-emberjs
+
+Below is the usual readme:
+
+------------
+
+
 # How-much-to-eat-example
 
 This README outlines the details of collaborating on this Ember application.
